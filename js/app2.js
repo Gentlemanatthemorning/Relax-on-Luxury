@@ -1,3 +1,5 @@
+//changing slides text
+
 document.addEventListener("DOMContentLoaded", (event) => {
     var next = document.getElementById('nextPic');
     var prev = document.getElementById('prevPic');

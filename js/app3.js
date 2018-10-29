@@ -1,3 +1,5 @@
+//hiding text bar from articles photo
+
 var barTextHiding = document.querySelectorAll(".article__box__img__bar");
 var leng = barTextHiding.length;
 for (var i = 0; i < leng; i++) {

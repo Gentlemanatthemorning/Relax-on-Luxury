@@ -18,18 +18,21 @@
         & ul{
             list-style: none;
           }
+
           & li{
             display: none;
-            
           }
+
           & .visible{
             display: inline-block;
           }
       }
+
       &__box {
           display: flex;
           align-items: center;
           padding-left: 5%;
+
           &__text {
               font-size: 35px;
               color: $thirdColor;
@@ -37,10 +40,12 @@
               margin-bottom: 20%;
               cursor: default;
           }
+
           &__all{
             & ul{
                 list-style: none;
               }
+
               & li{
                 display: none;
                 visibility: hidden;
@@ -49,10 +54,12 @@
                   visibility: visible;
                 }
               }
+
               & .visible{
                 display: inline-block;
               }
           }
+
           &__button {
               background-color: $thirdColor;
               display: flex;
@@ -68,17 +75,28 @@
               border-radius: 10px;
               font-size: 25px;
               box-shadow: 3px 3px 17px -4px rgba(0,0,0,0.75);
+              & a {
+                text-decoration: none;
+                color: $mainColor;
+              }
           }
+
           &__button:focus {
               outline: 0;
             }
+
           &__button:hover {
             transform: scale(1.2);
             transition: .5s;
             color: $forthColor;
+            & a {
+              color: $forthColor;
+              transition: .5s;
+            }
           }
       }
   }
+
   #prevPic,
   #nextPic {
     width: 85px;
@@ -90,12 +108,13 @@
     cursor: pointer;
     transition: 0.5s;
     flex-direction: row;
-    
   }
+
   #prevPic:hover,
   #nextPic:hover {
     color: $secondColor;
   }
+  
   #nextPic {
     order: 1;
   }
