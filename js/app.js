@@ -17,15 +17,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         allLi[show].classList.add('visible');
     });
-
-    next.addEventListener(setInterval( () => {
-        allLi[show].classList.remove('visible');
-            show++;
-            (show >= allLi.length) ?
-                show = 0:null;
-    
-            allLi[show].classList.add('visible');
-    }, 2000));
     
     prev.addEventListener('click', () => {
         allLi[show].classList.remove('visible');
@@ -35,5 +26,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         allLi[show].classList.add('visible');
     })
+
+    next.addEventListener(setInterval( () => {
+        allLi[show].classList.remove('visible');
+            show++;
+            (show >= allLi.length) ?
+                show = 0:null;
+    
+            allLi[show].classList.add('visible');
+    }, 2000));
 });
 

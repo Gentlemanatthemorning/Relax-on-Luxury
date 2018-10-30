@@ -63,6 +63,13 @@
             padding: 15px;
         }
     }
+    &__text {
+        width: 18rem;
+
+        @media #{$desktop} {
+            width: 100%;
+        }
+    }
     
     &__title{
         font-size: 16px;
