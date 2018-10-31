@@ -53,8 +53,7 @@
 
     }
     & li:hover .page__nav__sublist {
-        opacity: 1;
-        visibility: visible;
+        display: block;
     }
     & a {
         font-size: 14px;
@@ -80,8 +79,7 @@
         top: calc(100% + 15px);
         left: 50%;
         transform: translate(-50%, 0);
-        opacity: 0;
-        visibility: hidden;
+        display: none;
         transition: 0.5s;
         & a {
             text-transform: none;
