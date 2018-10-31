@@ -99,20 +99,11 @@
 
   #prevPic,
   #nextPic {
-    width: 85px;
-    font-size: 80px;
     color: $thirdColor;
     border:0;
     background: none;
     outline: none;
     cursor: pointer;
-    transition: 0.5s;
-    flex-direction: row;
-  }
-
-  #prevPic:hover,
-  #nextPic:hover {
-    color: $secondColor;
   }
   
   #nextPic {
