@@ -1,6 +1,6 @@
 .page__header {
-    background: linear-gradient(#282828, #2c2c2c);
-    height: 40px;
+    background: rgba(255, 255, 255, .6);
+    height: 60px;
     max-width: 100%;
     z-index: 10000;
     position: relative;
@@ -25,13 +25,13 @@
     &__link {
         font-size: 18px;
         text-transform: uppercase;
-        color: $thirdColor;
+        color: $forthColor;
         text-decoration: none;
         display: flex;
         height: 40px;
         align-items: center;
         & span {
-            color: $secondColor;
+            color: $thirdColor;
             display: inline-block;
             margin: 0 2px;
         }
@@ -50,28 +50,35 @@
         @media #{$tablet} {
             visibility: visible;
         }
-
     }
+
     & li:hover .page__nav__sublist {
         display: block;
     }
+
     & a {
         font-size: 14px;
         text-transform: uppercase;
-        color: $thirdColor;
+        color: $forthColor;
         text-decoration: none;
         font-weight: bold;
         padding: 0 20px;
         height: 40px;
         display: flex;
         align-items: center;
+        border-bottom: 1px solid $secondColor;
+        padding-bottom: 10px;
     }
+
     a:hover {
-        color: $secondColor;
+        color: $thirdColor;
+        border-bottom: 2px solid $thirdColor;
+
     }
     }
+
     &__sublist {
-        background: linear-gradient(#282828, #2c2c2c);
+        background: #bfdfe7;
         position: absolute;
         list-style:none;
         padding:0;
@@ -81,13 +88,21 @@
         transform: translate(-50%, 0);
         display: none;
         transition: 0.5s;
-        & a {
-            text-transform: none;
-            font-weight: normal;
-            height: auto;
-            padding:10px 30px;
+        & li {
+            & a {
+                text-transform: none;
+                font-weight: normal;
+                height: auto;
+                padding:10px 30px;
+                color: $forthColor;
+            }
+            & a:hover {
+                color: $thirdColor;
+                border-bottom: 1px solid $thirdColor;
+            }
         }
     }
+
     &__sublist:before {
         content:'';
         width: 100%;
@@ -97,12 +112,13 @@
         left:0;
         top:-15px;
     }
+
     &__sublist:after {
         content: "";
         width:0;
         height:0;
         border: 10px solid transparent;
-        border-bottom-color:rgb(41, 41, 41);
+        border-bottom-color: #bfdfe7;
         display: block;
         position: absolute;
         left:50%;

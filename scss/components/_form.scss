@@ -30,12 +30,9 @@
     &__row {
         margin-bottom: 26px;
         margin-top: 5px;
-        & input {
-            background-color: $mainColor;
-        }
+
 
         & textarea {
-            background-color: $mainColor;
             min-height: 150px;
             resize: vertical;
             padding: 10px;
@@ -52,15 +49,14 @@
         font-weight: 300;
         padding:0 10px;
         color: $forthColor;
-        box-shadow: inset 0 0 20px $thirdColor;
     }
 
     &__control:focus {
-        box-shadow: inset 0 0 0 1px $mainColor;
+        border: 2px solid $thirdColor;
     }
 
     &__control::placeholder {
-        color: $secondColor;
+        color: $fifthColor;
     }
 
     &__checkbox{
@@ -69,18 +65,18 @@
         align-items: center;
         font-size: 20px;
         font-weight: 300;
-        color: $mainColor;
+        color: $forthColor;
         border-radius: 1px;
         & input{
             width: 45px;
             height: 45px;
-            background-color: $secondColor;
+            background: none;
             appearance: none;
             outline: none;
             cursor: pointer;
             margin-right: 10px;
             flex-shrink: 0;
-            box-shadow: inset 0 0 10px $mainColor;
+            box-shadow: inset 0 0 5px $forthColor;
 
         }
 
@@ -102,13 +98,10 @@
         cursor: pointer;
         font-size: 25px;
         border-radius: 10px;
-        background: $thirdColor;
-        box-shadow: 3px 3px 17px -4px rgba(0,0,0,0.75);
-
-        & a {
-            text-decoration: none;
-            color: $mainColor;
-        }
+        background: none;
+        border: 1px solid $thirdColor;
+        color: $thirdColor;
+        font-weight: 300;
     }
 
     &__submit:focus {
@@ -116,14 +109,10 @@
     }
 
     &__submit:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
+        border: 2px solid $thirdColor;
         transition: .5s;
-        color: $forthColor;
-
-        & a {
-            color: $forthColor;
-            transition: .5s;
-        }
+        font-weight: 400;
     }
 }
 

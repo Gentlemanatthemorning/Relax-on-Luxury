@@ -1,10 +1,7 @@
 .contact {
-    background: linear-gradient($mainColor, $secondColor);
-    min-width: 100%;
-    height: 500px;
     &__name {
         font-size: 40px;
-        color: $secondColor;
+        color: $forthColor;
         margin-bottom: 30px;
         padding-top: 10%;
         font-weight: 600;
@@ -19,7 +16,7 @@
         }
         &__sub {
             font-size: 20px;
-            color: $mainColor;
+            color: $forthColor;
             margin-bottom: 30px;
             padding-top: 10%;
             font-weight: 600;
@@ -58,7 +55,7 @@
 
         & a {
             text-decoration: none;
-            color: $mainColor;
+            color: $thirdColor;
         }
         & a:hover {
             color: $forthColor;
@@ -116,12 +113,14 @@
     }
 
     &__box__regular1 {
-        box-shadow: inset 0 0 5px $mainColor;
+        box-shadow: inset 0 0 5px $forthColor;
         padding: 5px;
         display: flex;
 
         @media #{$desktop} {
             display: block;
+            margin-top: 70px;
+
         }
     }
 
@@ -134,7 +133,7 @@
         @media #{$desktop} {
             margin-right: 20px;
             margin-left: 20px;
-            margin-top: 0;
+            margin-top: 70px;
             margin-bottom: 0;
         }
     }

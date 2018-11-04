@@ -23,6 +23,7 @@
     width: 320px;
     height: 500px;
     background-color: $mainColor;
+    border: 1px solid $thirdColor;
     vertical-align: top;
     text-align: center;
     cursor: default;
@@ -33,7 +34,7 @@
     }
 
     &__option {
-        color: $secondColor;
+        color: $forthColor;
     }
 
     &__price {
@@ -44,10 +45,9 @@
         box-sizing: border-box;
         width: 130px;
         height: 130px;
-        border: 2px solid $thirdColor;
+        border: 1px solid $thirdColor;
         border-radius: 50%;
         background-color: $mainColor;
-        color: $forthColor;
         
         &__text {
             display: inline-block;
@@ -89,17 +89,17 @@
         bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: $thirdColor;
+        background: none;
         border-radius: 10px;
-        border: 0;
+        border: 1px solid $thirdColor;
         cursor: pointer;
-        color: $mainColor;
+        color: $thirdColor;
         font-size: 25px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 50px;
         padding-right: 50px;
-        box-shadow: 3px 3px 17px -4px rgba(0,0,0,0.75);       
+        font-weight: 300;
     }
 
     &__button:focus {
@@ -107,11 +107,9 @@
       }
 
     &__button:hover {
-      transform: scale(1.1);
-      transition: .5s;
-      color: $forthColor;
-      bottom: 15px;
-      left: 26%;
+        border: 2px solid $thirdColor;
+        transition: .3s;
+        font-weight: 400;
     }
 }
 
@@ -122,8 +120,8 @@
     box-sizing: border-box;
     width: 60px;
     height: 60px;
-    background-color: $mainColor;
-    border: 2px solid $thirdColor;
+    background: $mainColor;
+    border: 1px solid $thirdColor;
     border-radius: 50%;
 }
 
@@ -135,7 +133,7 @@
     box-sizing: border-box;
     width: 26px;
     height: 26px;
-    background-color: $secondColor;
-    border: 2px solid $thirdColor;
+    background: $fifthColor;
+    border: 1px solid $thirdColor;
     border-radius: 50%;
 }
