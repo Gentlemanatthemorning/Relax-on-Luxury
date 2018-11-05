@@ -1,6 +1,13 @@
 @import "base/variables";
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'KoHo', sans-serif;
     background: linear-gradient($fifthColor, $mainColor);
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
